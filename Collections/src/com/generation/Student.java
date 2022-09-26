@@ -11,7 +11,7 @@ public class Student
 
     List<Course> enrolledCourses = new ArrayList<>(  );
 
-
+    int total =0;
     public Student( String name, String id )
     {
         this.name = name;
@@ -21,6 +21,7 @@ public class Student
     public String getName()
     {
         return name;
+        
     }
 
     public void setName( String name )
@@ -47,8 +48,8 @@ public class Student
     }
 
     public int totalEnrolledCourses(){
-        //TODO implement
-        return 0;
+		
+        return enrolledCourses.size();
     }
 
     public List<Course> getEnrolledCourses()
